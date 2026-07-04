@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: activity-logger
+Version: 1.0.0
+Summary: Federal-style activity logging and quarterly report generator
+Requires-Python: >=3.12
+Requires-Dist: PySide6>=6.7
+Requires-Dist: reportlab>=4.2
+Provides-Extra: dev
+Requires-Dist: pytest>=8.2; extra == "dev"
+Requires-Dist: pytest-qt>=4.4; extra == "dev"
+Requires-Dist: pypdf>=4.3; extra == "dev"
+Requires-Dist: pyinstaller>=6.9; extra == "dev"

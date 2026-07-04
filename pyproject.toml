@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "activity-logger"
+version = "1.0.0"
+description = "Federal-style activity logging and quarterly report generator"
+requires-python = ">=3.12"
+dependencies = [
+    "PySide6>=6.7",
+    "reportlab>=4.2",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.2",
+    "pytest-qt>=4.4",
+    "pypdf>=4.3",
+    "pyinstaller>=6.9",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v"
